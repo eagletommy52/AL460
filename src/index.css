@@ -118,6 +118,7 @@ li {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  margin-bottom: 5px;
 }
 .newsCardInner {
   display: flex;
