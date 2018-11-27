@@ -1,14 +1,150 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #212C64;
+}
+.bm-menu a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+.missionList li {
+  list-style: inside
+}
+.button {
+  color: #e6e6e6;
+  background: #0a0a0a;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+.button:hover:enabled {
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav li {
+  margin-right: 15px;
+}
+.nav li a {
+  color: #FFC30E;
+}
+.burgerNav {
+  display:block
+}
+.nonBurgerNav {
+  display: none
+}
+@media (min-width: 500px) {
+  .burgerNav {
+    display:none
+  }
+  .nonBurgerNav {
+    display: block
+  }
+}
+.active {
+  font-weight: bold;
+}
+
+.titleHeader {
+  background-color: #00467F;
+  color: #FFC30E;
+  display: flex;
+  justify-content: space-between;
+}
+.titleBadge {
+  height: 4rem;
+
+}
+.eventCard {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 2px;
+  max-width: 30%;
+}
+.newsCard {
+  width: 95%;
+  height: 20vh;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.newsCardInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.newsCard:hover {
+  opacity: 0.9;
+}
+.newsCard a {
+  color: #FFC30E;
+}
+.newsCard a:visited {
+  color: #FFC30E;
+}
+.newsCard h4 {
+  background-color: rgba(0, 70, 127, 0.6);
+  color: #FFC30E;
+}
+.storeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.storeItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
 }
