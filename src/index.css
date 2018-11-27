@@ -97,6 +97,7 @@ li {
   color: #FFC30E;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .titleBadge {
   height: 4rem;
