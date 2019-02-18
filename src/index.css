@@ -103,42 +103,21 @@ li {
   height: 4rem;
 
 }
-.eventCard {
+.fallenCard {
   border: 1px solid black;
-  padding: 10px;
   margin: 2px;
-  max-width: 30%;
+  /* max-width: 30%; */
+  border-radius: 10px;
+  overflow:hidden;
 }
-.newsCard {
-  width: 95%;
-  height: 20vh;
-  background-size: cover;
-  background-position: center; /* Center the image */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-bottom: 5px;
+.fallenCard img {
+  margin: 10px 5px;
 }
-.newsCardInner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+.officerCard {
+  margin: 5px;
+  padding: 5px;
 }
-.newsCard:hover {
-  opacity: 0.9;
-}
-.newsCard a {
-  color: #FFC30E;
-}
-.newsCard a:visited {
-  color: #FFC30E;
-}
-.newsCard h4 {
-  background-color: rgba(0, 70, 127, 0.6);
-  color: #FFC30E;
-}
+
 .storeContainer {
   display: flex;
   flex-wrap: wrap;
@@ -149,4 +128,8 @@ li {
   justify-content: center;
   align-items: center;
   max-width: 300px;
+}
+.officerList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

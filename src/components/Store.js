@@ -23,9 +23,11 @@ class Store extends React.Component {
       <div className='home-container'>
         <h1>Store</h1>
         <div className="storeContainer">
-          <StoreItem imgSrc={itemPics['garrisoncap.png']} itemName="AL460 Garrison Cap" itemCost="$50.00"/>
-          <StoreItem imgSrc={itemPics['jackets.jpg']} itemName="American Legion Jacket" itemCost="$75.00"/>
-          <StoreItem imgSrc={itemPics['balltix.png']} itemName="AL460 Winter Ball Ticket" itemCost="$100.00"/>
+          <StoreItem imgSrc={itemPics['polo.jpg']} itemName="AL460 Polo" itemCost="$50.00"/>
+          <StoreItem imgSrc={itemPics['patchtshirt.jpg']} itemName="American Flag Patch TShirt" itemCost="$25.00"/>
+          <StoreItem imgSrc={itemPics['al460challengecoin.jpg']} itemName="AL460 Challenge Coin" itemCost="$20.00"/>
+          <StoreItem imgSrc={itemPics['LemmChallengeCoin.jpg']} itemName="Det. Lemm Challenge Coin" itemCost="$15.00"/>
+          <StoreItem imgSrc={itemPics['AL460Pin.jpg']} itemName="AL460 Pin" itemCost="$5.00"/>
         </div>
       </div>
     )

@@ -44,7 +44,7 @@ var menuStyles = {
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
+  return images
 }
 const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
 
@@ -52,9 +52,9 @@ function Nav () {
   return (
     <ul className='titleHeader'>
     <li>
-      <img className='titleBadge' alt="AL460 Logo" src={images['AL460.png']}/>
-      <img className='titleBadge' alt="American Legion Logo"src={images['AL-logo.png']}/>
-      <img className='titleBadge' alt="AL460 Police Logo"src={images['AL460Police.png']}/>
+    <NavLink exact activeClassName='active' to='/'><img className='titleBadge' alt="AL460 Logo" src={images['AL460.png']}/></NavLink>
+      <a href="https://www.legion.org"><img className='titleBadge' alt="American Legion Logo"src={images['AL-logo.png']}/></a>
+      <NavLink exact activeClassName='active' to='/'><img className='titleBadge' alt="AL460 Police Logo"src={images['AL460Police.png']}/></NavLink>
     </li>
     <li className='nonBurgerNav'>
             <ul className='nav'>
@@ -65,7 +65,7 @@ function Nav () {
                 <NavLink activeClassName='active' to='/about'>About</NavLink>
               </li>
               <li>
-                <NavLink activeClassName='active' to='/calendar'>Calendar</NavLink>
+                <NavLink activeClassName='active' to='/fallen'>Our Fallen</NavLink>
               </li>
               <li>
                 <NavLink activeClassName='active' to='/store'>Store</NavLink>
@@ -83,7 +83,7 @@ function Nav () {
                 <NavLink activeClassName='active' to='/about'>About</NavLink>
               </li>
               <li>
-                <NavLink activeClassName='active' to='/calendar'>Calendar</NavLink>
+                <NavLink activeClassName='active' to='/fallen'>Our Fallen</NavLink>
               </li>
               <li>
                 <NavLink activeClassName='active' to='/store'>Store</NavLink>

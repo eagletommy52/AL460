@@ -10,21 +10,32 @@ function importAll(r) {
 const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
 const newsImages = importAll(require.context('../assets/news', false, /\.(png|jpe?g|svg)$/));
 const newsMessageStyle = {
-  display: 'flex'
+  display: 'flex',
+  flexWrap: 'wrap',
+  minWidth: '80%'
 }
 const halfBoxStyle = {
-  width: '50%'
+  maxWidth: '50%'
 }
 
-const NewsCard = (props) => {
+const OfficerCard = props =>{
   return (
-      <a className='newsCard' style={{fontSize: '1.45rem', backgroundImage: `url(${props.imgSrc})`}} href={props.link}>
-        <div className="newsCardInner" height="100%">
-          <h4 style={{position: 'relative'}}>{props.title}</h4>
-        </div>
-      </a>
+    <div className="officerCard" style={{maxWidth:"50%", textAlign:"left"}}>
+    {props.name}<br/>
+    <p style={{fontSize:"12px"}}>{props.position}</p>
+    <a style={{fontSize:"12px"}} href={"mailto:"+props.email}>{props.email}</a>
+    </div>
   )
 }
+const officers=[
+  {name: "Michael Desrosiers", position:"Post Commander", email:"michael.d@al460.org"},
+  {name: "Benjamin Eill", position:"1st Vice Commander", email:"benjamin.e@al460.org"},
+  {name: "Jasmine Arocho", position:"2nd Vice Commander", email:""},
+  {name: "Angel Carrasquillo", position:"Adjutant/Treasurer", email:"angel.cq@al460.org"},
+  {name: "Angel Castillo", position:"Sergeant-At-Arms", email:""},
+  {name: "Vinny Pinto", position:"Membership Coordinator", email:""},
+  {name: "Reginald Law", position:"Historian", email:""},
+]
 
 class Home extends React.Component {
   render() {
@@ -51,16 +62,19 @@ class Home extends React.Component {
         </Carousel>
         <div style={newsMessageStyle}>
           <div style={halfBoxStyle}>
-            <h4>American Legion News</h4>
-            <NewsCard title="Veterans Give Back During Annual Thanksgiving Dinner" link="./" imgSrc={newsImages['news1.jpg']} />
-            <NewsCard title="Armistice Day Parade Draws Huge Crowds" link="./" imgSrc={newsImages['news2.jpg']} />
-            <NewsCard title="Memorial Service For Our Fallen and POWs" link="./" imgSrc={newsImages['news3.jpg']} />
+            <h4>Post Officers</h4>
+            <div className="officerList">
+              {officers.map(officer=>{
+                return <OfficerCard name={officer.name} position={officer.position} email={officer.email}/>
+              })}
+            </div>
             
             
           </div>
           <div style={halfBoxStyle}>
-            <h4>Special AL460 Announcement</h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <h4>Sign Up to be a member today!</h4>
+            <a href="/pdf/MEMBERSHIP_FORM.pdf">Click Here</a>
+          </div>
         </div>
       </div>
     )
