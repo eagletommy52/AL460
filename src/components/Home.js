@@ -2,20 +2,14 @@ import React from 'react';
 import {Carousel} from 'react-responsive-carousel';
 require("react-responsive-carousel/lib/styles/carousel.min.css");
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
-const newsImages = importAll(require.context('../assets/news', false, /\.(png|jpe?g|svg)$/));
 const newsMessageStyle = {
   display: 'flex',
   flexWrap: 'wrap',
-  minWidth: '80%'
+  minWidth: '80%',
+  justifyContent: "space-around",
 }
 const halfBoxStyle = {
-  maxWidth: '50%'
+  maxWidth: '300px'
 }
 
 const OfficerCard = props =>{
@@ -46,16 +40,16 @@ class Home extends React.Component {
         </div>
         <Carousel width="100%" height="30%" showThumbs={false} dynamicHeight autoPlay>
                 <div>
-                  <img alt="AL460" src={images['4.jpg']} />   
+                  <img alt="AL460" src={'assets/images/4.jpg'} />   
                 </div>
                 <div>
-                    <img alt="AL460" src={images['1.jpg']} />
+                    <img alt="AL460" src={'assets/images/1.jpg'} />
                 </div>
                 <div>
-                  <img alt="AL460" src={images['2.jpg']} />
+                  <img alt="AL460" src={'assets/images/2.jpg'} />
                 </div>
                 <div>
-                  <img alt="AL460" src={images['3.jpg']} />
+                  <img alt="AL460" src={'assets/images/3.jpg'} />
                     
                 </div>
                 
@@ -73,7 +67,37 @@ class Home extends React.Component {
           </div>
           <div style={halfBoxStyle}>
             <h4>Sign Up to be a member today!</h4>
-            <a href="/pdf/MEMBERSHIP_FORM.pdf">Click Here</a>
+            <a href="/pdf/MEMBERSHIP_FORM.pdf">Click Here</a><br/><br/>
+            <h4>Special Thanks To Our Sponsors:</h4>
+              <ul>
+                <li>
+                  New York City Police Benevolent Association<br/>
+                  <a style={{fontSize: "12px"}} href="http://www.nycpba.org/">www.nycpba.org</a>
+                </li>
+                <li>
+                  Detective's Endowment Association<br/>
+                  <a style={{fontSize: "12px"}} href="https://www.nycdetectives.org/">www.nycdetectives.org/</a>
+                </li>
+                <li>
+                  The Cop Shop<br/>
+                  <a style={{fontSize: "12px"}} href="http://www.copshopny.com/">www.copshopny.com</a>
+                </li>
+                <li>
+                  Brotherhood For the Fallen<br/>
+                  <a style={{fontSize: "12px"}} href="http://www.brotherhoodnyc.org/">www.brotherhoodnyc.org</a>
+                </li>
+                <li>
+                  Pitta & Baione LLP - 9/11 Victim Comp Fund Claims<br/>
+                  <a style={{fontSize: "12px"}} href="https://www.911benefits.com/">www.911benefits.com</a>
+                </li>
+                <li>
+                  NYPD Korean Officers Association<br/>
+                </li>
+                <li>
+                  The Military Mortgage Guys<br/>
+                  <a style={{fontSize: "12px"}} href="http://www.militarymortgageguys.com/">www.militarymortgageguys.com</a>
+                </li>
+              </ul>
           </div>
         </div>
       </div>

@@ -103,19 +103,35 @@ li {
   height: 4rem;
 
 }
+.fallenCardBox {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 .fallenCard {
   border: 1px solid black;
-  margin: 2px;
+  margin: 5px;
+  padding:0;
+  max-width:500px;
   /* max-width: 30%; */
   border-radius: 10px;
   overflow:hidden;
 }
+@media (max-width: 500px) {
+  .fallenCard {
+    max-width: 100%;
+  }
+}
 .fallenCard img {
   margin: 10px 5px;
+  
 }
 .officerCard {
   margin: 5px;
   padding: 5px;
+}
+.officerCard p {
+  margin: 0 
 }
 
 .storeContainer {
