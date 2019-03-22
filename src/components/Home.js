@@ -24,10 +24,10 @@ const OfficerCard = props =>{
 const officers=[
   {name: "Michael Desrosiers", position:"Post Commander", email:"michael.d@al460.org"},
   {name: "Benjamin Eill", position:"1st Vice Commander", email:"benjamin.e@al460.org"},
-  {name: "Jasmine Arocho", position:"2nd Vice Commander", email:""},
+  {name: "Jassmin Arocho", position:"2nd Vice Commander", email:""},
   {name: "Angel Carrasquillo", position:"Adjutant/Treasurer", email:"angel.cq@al460.org"},
   {name: "Angel Castillo", position:"Sergeant-At-Arms", email:""},
-  {name: "Vinny Pinto", position:"Membership Coordinator", email:""},
+  {name: "Vincent Pinto", position:"Membership Coordinator", email:""},
   {name: "Reginald Law", position:"Historian", email:""},
 ]
 
@@ -59,7 +59,7 @@ class Home extends React.Component {
             <h4>Post Officers</h4>
             <div className="officerList">
               {officers.map(officer=>{
-                return <OfficerCard name={officer.name} position={officer.position} email={officer.email}/>
+                return <OfficerCard key={officer.name} name={officer.name} position={officer.position} email={officer.email}/>
               })}
             </div>
             

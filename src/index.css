@@ -98,6 +98,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 .titleBadge {
   height: 4rem;
@@ -144,6 +145,7 @@ li {
   justify-content: center;
   align-items: center;
   max-width: 300px;
+  padding-bottom: 25px;
 }
 .officerList {
   display: grid;
