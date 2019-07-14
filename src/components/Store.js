@@ -88,37 +88,15 @@ class Store extends React.Component {
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
           </form>
           </StoreItem>
-          <StoreItem imgSrc={itemPics['balltix.png']} itemName="2019 AL460 Ball Ticket" itemCost="$100.00">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="DZU7Z2KWHFUJ2" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-              </form>
+          <StoreItem imgSrc={itemPics['balltix.png']} itemName="2019 AL460 Ball Ticket" itemCost="SOLD OUT">
+            
           </StoreItem>
-          <StoreItem imgSrc={itemPics['balltix.png']} itemName="2019 AL460 Ball Table of 14 Tickets" itemCost="$1350.00">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick"/>
-              <input type="hidden" name="hosted_button_id" value="CW44VLEN8T38J"/>
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-            </form>
+          <StoreItem imgSrc={itemPics['balltix.png']} itemName="2019 AL460 Ball Table of 14 Tickets" itemCost="SOLD OUT">
+            
           </StoreItem>
-          <StoreItem imgSrc={itemPics['balltix.png']} itemName="Donate a 2019 AL460 Ball Ticket to Veteran" itemCost="$100.00">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="7G749F6PRY6C8" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-              </form>
+          <StoreItem imgSrc={itemPics['balltix.png']} itemName="Donate a 2019 AL460 Ball Ticket to Veteran" itemCost="SOLD OUT">
           </StoreItem>
-          <StoreItem imgSrc={itemPics['balltix.png']} itemName="Donate a 2019 AL460 Ball Table to veterans" itemCost="$1350.00">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick"/>
-              <input type="hidden" name="hosted_button_id" value="TNK4YFYS69MR8"/>
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-            </form>
+          <StoreItem imgSrc={itemPics['balltix.png']} itemName="Donate a 2019 AL460 Ball Table to veterans" itemCost="SOLD OUT">
           </StoreItem>
         </div>
       </div>
