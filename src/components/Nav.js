@@ -80,9 +80,6 @@ function Nav () {
               <li>
                 <NavLink activeClassName='active' to='/fallen'>Our Fallen</NavLink>
               </li>
-              <li>
-                <NavLink activeClassName='active' to='/store'>Store</NavLink>
-              </li>
             </ul>
     </li>
     <li className='burgerNav'>
@@ -97,9 +94,6 @@ function Nav () {
               </li>
               <li>
                 <NavLink activeClassName='active' to='/fallen'>Our Fallen</NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName='active' to='/store'>Store</NavLink>
               </li>
             </ul>
         
