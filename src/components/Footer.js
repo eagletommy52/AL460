@@ -16,9 +16,7 @@ function Footer () {
               <li>
                 <NavLink activeClassName='active' to='/fallen'>Our Fallen</NavLink>
               </li>
-              <li>
-                <NavLink activeClassName='active' to='/store'>Store</NavLink>
-              </li>
+
             </ul>
     </li>
     <li className='burgerNav'>
